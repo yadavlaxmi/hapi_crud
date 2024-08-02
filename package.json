@@ -2,14 +2,20 @@
   "name": "hapi_crud",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "migrate": "knex migrate:latest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/hapi": "^21.3.10",
+    "@hapi/joi": "^17.1.1",
+    "install": "^0.13.0",
     "knex": "^3.1.0",
+    "npm": "^10.8.2",
+    "objection": "^3.1.4",
     "pg": "^8.12.0"
   }
 }
